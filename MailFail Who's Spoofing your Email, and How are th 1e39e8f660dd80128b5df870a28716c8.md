@@ -1,8 +1,6 @@
 # MailFail: Who's Spoofing your Email, and How are they Doing it?
 
-# MailFail: Who's Spoofing Your Email and How
-
-[https://www.youtube.com/live/UbdMAmsWus8](https://www.youtube.com/live/UbdMAmsWus8?si=CYa8yl6XZBBrM1QC)
+[https://www.youtube.com/live/UbdMAmsWus8](https://www.youtube.com/live/UbdMAmsWus8)
 
 ## Introduction Summary
 
@@ -109,13 +107,13 @@ In this webcast, Jack, a pentester from Black Hills Information Security, presen
 ## Quiz Questions
 
 1. **Question**: Why can SPF be easily bypassed despite correctly verifying the sending server's IP address?
-**Answer**: SPF verifies the domain in the SMTP FROM field (used for protocol communication), but not the From header that users see in their email clients. An attacker can use their own domain in SMTP FROM to pass SPF checks while displaying any spoofed domain in the From header.
+    - **Answer**: SPF verifies the domain in the SMTP FROM field (used for protocol communication), but not the From header that users see in their email clients. An attacker can use their own domain in SMTP FROM to pass SPF checks while displaying any spoofed domain in the From header.
 2. **Question**: What vulnerability exists in some DKIM implementations that would allow an attacker to perfectly forge signed emails?
-**Answer**: Some domains use weak DKIM RSA keys (particularly 512-bit keys) that can be computationally cracked in about 2 days for approximately $30 of compute resources. Once cracked, the attacker has the private key and can create perfectly signed emails that pass DKIM verification.
+    - **Answer**: Some domains use weak DKIM RSA keys (particularly 512-bit keys) that can be computationally cracked in about 2 days for approximately $30 of compute resources. Once cracked, the attacker has the private key and can create perfectly signed emails that pass DKIM verification.
 3. **Question**: How does DMARC improve upon SPF and DKIM to prevent email spoofing?
-**Answer**: DMARC introduces the concept of "alignment" - checking that the domain in the From header (visible to users) matches the domain authenticated by SPF or DKIM. This closes the bypass vulnerabilities in SPF and DKIM, and also specifies clear policies (none, quarantine, reject) for handling failed authentications.
+    - **Answer**: DMARC introduces the concept of "alignment" - checking that the domain in the From header (visible to users) matches the domain authenticated by SPF or DKIM. This closes the bypass vulnerabilities in SPF and DKIM, and also specifies clear policies (none, quarantine, reject) for handling failed authentications.
 4. **Question**: What does the PCT field in a DMARC record do, and why might it be problematic for security?
-**Answer**: PCT (percentage) specifies what portion of emails the DMARC policy applies to. For example, PCT=60 means the policy applies to only 60% of emails, while 40% get a downgraded policy. This is problematic because it allows a percentage of spoofed emails to bypass protection, essentially creating a statistical backdoor.
+    - **Answer**: PCT (percentage) specifies what portion of emails the DMARC policy applies to. For example, PCT=60 means the policy applies to only 60% of emails, while 40% get a downgraded policy. This is problematic because it allows a percentage of spoofed emails to bypass protection, essentially creating a statistical backdoor.
 
 ## Notable Quotes
 
