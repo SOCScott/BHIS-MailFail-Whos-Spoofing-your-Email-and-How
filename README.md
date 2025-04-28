@@ -1,1 +1,3 @@
 # BHIS-MailFail-Whos-Spoofing-your-Email-and-How
+
+In this webcast, Jack, a pentester from Black Hills Information Security, presents his research on email security protocols and their inherent flaws. The presentation walks through how email works, the different security mechanisms in place (SPF, DKIM, and DMARC), and how attackers can bypass these protections. Jack also introduces his browser extension "MailFail" that automates the detection of email security misconfigurations. The presentation covers practical demonstrations of email spoofing techniques and provides guidance on properly securing email domains.
