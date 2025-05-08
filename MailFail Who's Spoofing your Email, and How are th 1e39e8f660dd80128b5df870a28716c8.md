@@ -134,3 +134,29 @@ In this webcast, Jack, a pentester from Black Hills Information Security, presen
 
 > "Email is a garbage fire in conclusion."
 >
+
+## Additional Resources
+
+✉️ MailFail Extension (Firefox) and other resources
+ https://m.ail.fail/
+🛝 Webcast Slides -
+https://www.blackhillsinfosec.com/wp-...
+
+🔗 Jack's list of DKIM selectors -
+https://github.com/ACK-J/MailFail/blob/main/DKIM_Selectors.txt
+
+🔗 Download the extension -
+https://addons.mozilla.org/en-US/firefox/addon/mailfail/
+
+🔗 github repository - 
+https://github.com/ACK-J/MailFail/
+
+🔗 Reconstruct private keys from the two prime numbers - 
+https://gist.github.com/ACK-J/487d0de5737458d953ca818a0645b09b
+
+🔗 Send DKIM signed emails script with a private key -
+https://gist.github.com/ACK-J/76585af46375641ec841cb6b77d345c3
+
+🔗 Here's a bonus that wasn't in the presentation -
+Python script that takes in a list of domains and checks them for DMARC misconfigurations - 
+https://gist.github.com/ACK-J/8a189bafbb54e00fb1b3f3e22dcd81c9
